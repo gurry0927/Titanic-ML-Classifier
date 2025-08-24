@@ -212,10 +212,10 @@ tab1, tab2, tab3 = st.tabs(["🛠️ 資料預處理流程", "📈 模型結果"
 with tab1:
     st.subheader("🛠️ 資料清理與預處理流程")
     pic_cols, pic_cols2, pic_cols3 = st.columns([1,2,1])
-    with pic_cols:
+    with pic_cols2:
         # 流程圖片
         try:
-            st.image('images/data_cleaned.png', caption="資料清理流程圖",  width=800, )
+            st.image('images/data_cleaned.png', caption="資料清理流程圖",  width=1000, )
         except:
             st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
     
