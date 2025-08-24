@@ -213,16 +213,9 @@ with tab1:
     st.subheader("🛠️ 資料清理與預處理流程")
     # 流程圖片
     try:
-        st.markdown("""
-        <style>
-        .element-container:has(> .stImage) {
-            display: flex;
-            justify-content: center;
-        }
-        </style>
-        """, unsafe_allow_html=True)
-        
-        st.image('images/data_cleaned.png', caption="資料清理流程圖", width=800)
+        col1, col2, col3 = st.columns([0.5, 3, 0.5])
+        with col2:
+            st.image('images/data_cleaned.png', caption="資料清理流程圖", use_column_width=True)
     except:
         st.warning("⚠️ 找不到流程圖片")
     
