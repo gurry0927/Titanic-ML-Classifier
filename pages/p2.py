@@ -214,7 +214,7 @@ with tab1:
     
     # 流程圖片
     try:
-        st.image('images/data_cleaned.png', caption="資料清理流程圖", use_container_width=True, width=800)
+        st.image('images/data_cleaned.png', caption="資料清理流程圖", use_container_width=True, width=600)
     except:
         st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
     
