@@ -502,17 +502,7 @@ with tab3:
 
     # 底部資訊
     st.markdown("---")
-    st.markdown(
-        """
-        <div style='text-align: center; padding: 1rem; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 10px;'>
-            <p style='color: #495057; margin: 0;'>
-            📊 <strong>探索性資料分析完成</strong> | 下一步：資料清理與機器學習建模 ➡️
-            </p>
-        </div>
-        """, 
-        unsafe_allow_html=True
-    )
-
+    st.info("📊 探索性資料分析完成 | 下一步：資料清理與機器學習建模")
 
 st.markdown("---")
 st.markdown(
