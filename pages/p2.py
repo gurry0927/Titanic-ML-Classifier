@@ -214,7 +214,14 @@ with tab1:
     
     # 流程圖片
     try:
-        st.image('images/data_cleaned.png', caption="資料清理流程圖",  width=600)
+        st.markdown(
+        """
+        <div style="text-align:center;">
+            <img src="images/data_cleaned.png" style="max-width:800px; width:100%; height:auto;">
+        </div>
+        """,
+        unsafe_allow_html=True
+        )
     except:
         st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
     
