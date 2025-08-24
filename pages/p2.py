@@ -215,7 +215,7 @@ with tab1:
     try:
         col1, col2, col3 = st.columns([0.5, 3, 0.5])
         with col2:
-            st.image('images/data_cleaned.png', caption="資料清理流程圖", use_column_width=True)
+            st.image('images/data_cleaned.png', caption="資料清理流程圖", use_container_width=True)
     except:
         st.warning("⚠️ 找不到流程圖片")
     
