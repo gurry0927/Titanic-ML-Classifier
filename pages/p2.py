@@ -212,10 +212,21 @@ tab1, tab2, tab3 = st.tabs(["🛠️ 資料預處理流程", "📈 模型結果"
 with tab1:
     st.subheader("🛠️ 資料清理與預處理流程")
     # 流程圖片
+    img_path = "images/data_cleaned.png"
+    caption = "資料清理流程圖"
+    max_width = 800
     try:
-        st.image('images/data_cleaned.png', caption="資料清理流程圖",  width=800, use_container_width=True)
+        st.markdown(
+        f"""
+        <div style="text-align:center;">
+            <img src="{img_path}" style="max-width:{max_width}px; width:100%; height:auto;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+        st.markdown(f"<p style='text-align:center;'>{caption}</p>", unsafe_allow_html=True)
     except:
-        st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
+        st.warning(f"⚠️ 找不到圖片 ({img_path})")
     
     # 詳細步驟
     with st.expander("🔍 查看詳細資料清理步驟", expanded=True):
