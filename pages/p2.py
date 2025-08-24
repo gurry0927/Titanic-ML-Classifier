@@ -213,7 +213,7 @@ with tab1:
     st.subheader("🛠️ 資料清理與預處理流程")
     # 流程圖片
     try:
-        col1, col2, col3 = st.columns([0.5, 3, 0.5])
+        col1, col2, col3 = st.columns([1, 2, 1])
         with col2:
             st.image('images/data_cleaned.png', caption="資料清理流程圖", use_container_width=True)
     except:
