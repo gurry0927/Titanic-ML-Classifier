@@ -211,19 +211,13 @@ tab1, tab2, tab3 = st.tabs(["🛠️ 資料預處理流程", "📈 模型結果"
 # ============ Tab 2: 資料處理流程 ============
 with tab1:
     st.subheader("🛠️ 資料清理與預處理流程")
-    
-    # 流程圖片
-    try:
-        st.markdown(
-        """
-        <div style="text-align:center;">
-            <img src="images/data_cleaned.png" style="max-width:800px; width:100%; height:auto;">
-        </div>
-        """,
-        unsafe_allow_html=True
-        )
-    except:
-        st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
+    pic_cols, pic_cols2, pic_cols3 = st.columns([1,2,1])
+    with pic_cols:
+        # 流程圖片
+        try:
+            st.image('images/data_cleaned.png', caption="資料清理流程圖",  width=800, )
+        except:
+            st.warning("⚠️ 找不到流程圖片 (images/data_cleaned.png)")
     
     # 詳細步驟
     with st.expander("🔍 查看詳細資料清理步驟", expanded=True):
