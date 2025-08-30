@@ -1,7 +1,7 @@
 # 🚢 Titanic Survival Prediction with Machine Learning
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Demo-brightgreen?logo=streamlit)](https://YOUR-STREAMLIT-APP-LINK)  
-[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?logo=kaggle)](https://www.kaggle.com/YOUR-KAGGLE-USERNAME)  
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Demo-brightgreen?logo=streamlit)](https://titanic-ml-classifier-kvrfcmvzuaqu6dtpxzneb8.streamlit.app/)  
+[![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?logo=kaggle)](https://www.kaggle.com/gurry0927)  
 
 ---
 
@@ -92,3 +92,27 @@ pip install -r requirements.txt
 
 # 3. 執行 Streamlit 專案
 streamlit run app.py
+
+```
+---
+
+## 🏆 Kaggle 結果 (Kaggle Results)
+
+| Model          | Public Score |
+|----------------|--------------|
+| Random Forest  | 0.77272      |
+| SVC            | 0.77990      |
+
+---
+
+## 📬 聯繫我 (Contact)
+
+- Kaggle: [你的 Kaggle 頁面](https://www.kaggle.com/gurry0927)  
+- GitHub: [你的 GitHub](https://titanic-ml-classifier-kvrfcmvzuaqu6dtpxzneb8.streamlit.app/)  
+- Email: gurry0927@gmail.com  
+
+---
+
+<div align="center">
+  <sub>⚡ Tech Stack: Python • Scikit-learn • Streamlit • Pandas • Matplotlib • Kaggle • GitHub ⚡</sub>
+</div>
