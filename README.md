@@ -61,11 +61,23 @@ with an interactive **Streamlit web interface** for real-time predictions.
 
 ---
 
-## 📊 專案流程圖
-資料處理與模型訓練的主要步驟：
+## 🧹 Data Cleaning 在進行模型訓練前，對 Titanic 數據集進行了以下處理： 
+1. **刪除不相關欄位**
+   - PassengerId: 與生存率無關
+   - Name, Ticket: 類別過多，編碼成本高
+   - Cabin: 缺失值過多 (近 80%)
+2. **填補缺失值**
+   - Age: 使用中位數補齊
+   - Embarked: 使用眾數補齊
+3. **特徵編碼**
+   - Sex: male → 0, female → 1
+   - Embarked: C → 0, Q → 1, S → 2
+
+📊 流程圖示例：
 <div align="center">
   <img src="images/data_cleaned.png" width="600">
 </div>
+
 
 ---
 
@@ -107,8 +119,8 @@ streamlit run app.py
 
 ## 📬 聯繫我 (Contact)
 
-- Kaggle: [你的 Kaggle 頁面](https://www.kaggle.com/gurry0927)  
-- GitHub: [你的 GitHub](https://titanic-ml-classifier-kvrfcmvzuaqu6dtpxzneb8.streamlit.app/)  
+- Kaggle: [Link ↗️](https://www.kaggle.com/gurry0927)  
+- GitHub: [Link ↗️](https://titanic-ml-classifier-kvrfcmvzuaqu6dtpxzneb8.streamlit.app/)  
 - Email: gurry0927@gmail.com  
 
 ---
