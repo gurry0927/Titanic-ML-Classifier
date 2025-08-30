@@ -64,7 +64,7 @@ with an interactive **Streamlit web interface** for real-time predictions.
 ## 📊 專案流程圖
 資料處理與模型訓練的主要步驟：
 <div align="center">
-  <img src="images/data_cleaning.png" width="600">
+  <img src="images/data_cleaned.png" width="600">
 </div>
 
 ---
