@@ -39,17 +39,33 @@ with an interactive **Streamlit web interface** for real-time predictions.
 ---
 
 ## 📊 Demo Screenshots
+
 ### 🔹 模型訓練與參數選擇
-![Model Training Demo](images/model_training.gif)
+<div align="center">
+  <img src="images/demo01.gif" width="600">
+</div>
+
+使用者可調整 **模型類型 (Random Forest, SVC)** 與超參數，並立即看到 **訓練過程與評估結果**。  
+輸出包含：準確率、混淆矩陣、ROC 曲線等指標，方便比較不同模型表現。  
+
+---
 
 ### 🔹 自訂乘客資料即時預測
-![Custom Prediction Demo](images/custom_prediction.gif)
+<div align="center">
+  <img src="images/demo02.gif" width="600">
+</div>
+
+使用者可輸入 **自訂乘客屬性（性別、年齡、艙等）**，系統即時回傳預測結果。  
+輸出包含：生存機率百分比，並可下載模型或產生 **Kaggle 提交檔**。  
+
 
 ---
 
 ## 📊 專案流程圖
 資料處理與模型訓練的主要步驟：
-![Data Cleaning Flow](images/data_cleaning.png)
+<div align="center">
+  <img src="images/data_cleaning.png" width="600">
+</div>
 
 ---
 
